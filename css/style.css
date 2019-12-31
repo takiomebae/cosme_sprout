@@ -1,0 +1,413 @@
+/*ここから*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  /*background: red;*/
+}
+
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../images/heroimage.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+body {
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+
+nav .inner {
+  width: 100vw;
+  max-width: 100%;
+  background: #000000;
+  bottom: 0;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+li {
+  color: #F2F2F2;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  font-size: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+ul a {
+  color: #1E1826;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0 10px;
+}
+
+a {
+  transition: 0.4s ease;
+}
+
+
+header h1 {
+  font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  bottom: 400px;
+  right: 200px;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+header span {
+  color: #F21651;
+  font-weight: bold;
+}
+
+.sprout {
+  font-weight: bold;
+  color: #F21651;
+}
+
+
+section h1 {
+  background-color: #F21651;
+  color: #000;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  padding: 5px 80px;
+  font-family: 'Shadows Into Light', cursive;
+  position: relative;
+  height: 50px;
+  /*リボンの高さ*/
+  line-height: 50px;
+  /*リボンの高さ*/
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+section h1:before,
+section h1:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+section h1:before {
+  top: 0;
+  left: 0;
+  border-width: 25px 0px 25px 15px;
+  border-color: transparent transparent transparent #F2F2F2;
+  border-style: solid;
+}
+
+section h1:after {
+  top: 0;
+  right: 0;
+  border-width: 25px 15px 25px 0px;
+  border-color: transparent #F2F2F2 transparent transparent;
+  border-style: solid;
+}
+
+section .news {
+  display: flex;
+  justify-content: center;
+
+}
+
+/*conここから*/
+.con {
+  height: 50vh;
+  min-height: 400px;
+  margin-bottom: 100px;
+  /*min-width: 900px;*/
+  position: relative;
+  background-image: url(../images/about02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.con .aboutsprout {
+  position: absolute;
+  z-index: 9;
+  top: 5vh;
+  left: 100px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}
+
+
+.con img {
+  margin-top: 50px;
+  background: none;
+  opacity: 0.8;
+  filter: contrast(140%) brightness(115%);
+}
+
+.con h1:before {
+  top: 0;
+  left: 0;
+  border-width: 25px 0px 25px 15px;
+  border-color: transparent transparent transparent #b7b7b7;
+  border-style: solid;
+}
+
+.con h1:after {
+  top: 0;
+  right: 0;
+  border-width: 25px 15px 25px 0px;
+  border-color: transparent #b3b3b3 transparent transparent;
+  border-style: solid;
+}
+
+/*conAここから*/
+.conA {
+  display: flex;
+}
+
+.conA h1 {
+  margin-top: 40px;
+}
+
+.conA .text {
+  position: relative
+}
+
+.conA p {
+  color: #404040;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  letter-spacing: 0.125em;
+}
+
+.conA .flex {
+  display: flex;
+}
+
+.conA .flex a {
+  flex: 1;
+}
+
+.conA img {
+  opacity: 0.6;
+  box-shadow: 0 0 8px gray;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.conA a:hover {
+  filter: saturate(160%) brightness(110%);
+}
+
+
+.personal {
+  margin-top: 50px;
+  height: 50vh;
+  min-height: 400px;
+  margin-bottom: 100px;
+  position: relative;
+  background-image: url(../images/personalcolor01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: none;
+  margin-bottom: 120px;
+  width: 100%;
+  box-shadow: 0 0 15px gray;
+  border: #F21651 3px double;
+}
+
+.personal h2 {
+  font-size: 55px;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 0.1em;
+  position: absolute;
+  font-weight: 800;
+  top: 30%;
+  left: 55%;
+  color: #fff;
+  text-align: center;
+}
+
+.personal h2 span {
+  color: #F21651;
+  border-bottom: solid 2px #F21651;
+
+}
+
+
+.personal a:hover {
+  opacity: 0.85;
+  filter: none;
+}
+
+/*GALLERY*/
+.conB {
+  margin-bottom: 100px;
+}
+
+.conB h1 {
+  margin-top: 20px;
+}
+
+.conB img {
+  border: solid #555 0.7px;
+  margin-bottom: 30px;
+}
+
+.conB .eyelipface {
+  display: flex;
+  justify-content: center;
+	margin-left: 30px;
+}
+
+.conB .eyelipface a {
+  /* width: calc(100% / 3); */
+  flex: 1;
+  height: 450px;
+  position: relative;
+	margin-right: 30px;
+}
+
+.conB .eyelipface a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.conB .eyelipface a h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 70px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 7px 40px;
+  position: absolute;
+  z-index: 9;
+}
+
+.conB .eyelipface a .eye {
+  left: 45%;
+  top: 42%;
+}
+
+.conB .eyelipface a .lip {
+  left: 45%;
+  top: 42%;
+}
+
+.conB .eyelipface a .face {
+  left: 42%;
+  top: 42%;
+}
+
+
+.conB a {
+  text-decoration: none;
+  color: #1E1826;
+}
+
+.conB a:hover {
+  opacity: 0.9;
+  filter: brightness(120%);
+}
+
+/*コンタクト*/
+.conC h1 {
+  font-family: 'Shadows Into Light', cursive;
+  margin-left: 40px;
+}
+
+body .conC {
+  flex-direction: row;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.conC .inner {
+  display: flex;
+  justify-content: center;
+}
+
+.conC .table {
+  display: flex;
+  flex-direction: column;
+}
+
+.conC table {
+  border-bottom: solid 1px #555;
+  font-size: 0.875rem;
+  margin-left: 40px;
+}
+
+.conC th,
+td {
+  border-bottom: solid 1px #555;
+  padding: 1rem;
+}
+/*ショップここから*/
+.shopimage{
+  height: 30vh;
+  min-height: 400px;
+  margin-bottom: 100px;
+  /*min-width: 900px;*/
+  background-image: url(../images/about02.jpg);
+  background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	border: double 3px #ddd;
+	position: relative;
+}
+.shopimage h2 {
+  font-size: 80px;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 0.1em;
+  position: absolute;
+  font-weight: 800;
+  top: 30%;
+  left: 10%;
+  color: #F21651;
+  text-align: center;
+}
+
+/*フッターメニュー*/
+footer {
+  height: 20vh;
+  background-color: #555;
+}
