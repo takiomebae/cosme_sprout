@@ -95,6 +95,15 @@ header span {
   color: #F21651;
 }
 
+#about h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #F21651;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  font-family: 'Shadows Into Light', cursive;
+
+}
 
 section h1 {
   background-color: #F21651;
@@ -294,7 +303,7 @@ section .news {
 .conB .eyelipface {
   display: flex;
   justify-content: center;
-	margin-left: 30px;
+  margin-left: 30px;
 }
 
 .conB .eyelipface a {
@@ -302,7 +311,7 @@ section .news {
   flex: 1;
   height: 450px;
   position: relative;
-	margin-right: 30px;
+  margin-right: 30px;
 }
 
 .conB .eyelipface a img {
@@ -381,19 +390,28 @@ td {
   border-bottom: solid 1px #555;
   padding: 1rem;
 }
+
 /*ショップここから*/
-.shopimage{
+.shopimage {
   height: 30vh;
   min-height: 400px;
   margin-bottom: 100px;
   /*min-width: 900px;*/
-  background-image: url(../images/about02.jpg);
+  background-image: url(../images/shop.jpg);
   background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-	border: double 3px #ddd;
-	position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  border: double 3px #ddd;
+  position: relative;
 }
+
+.shopimage:hover {
+  opacity: 0.9;
+  filter: contrast(140%)brightness(105%);
+  transition: 0.4s ease;
+
+}
+
 .shopimage h2 {
   font-size: 80px;
   font-family: 'Shadows Into Light', cursive;
@@ -403,6 +421,7 @@ td {
   top: 30%;
   left: 10%;
   color: #F21651;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   text-align: center;
 }
 
