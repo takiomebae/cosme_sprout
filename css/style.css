@@ -95,7 +95,6 @@ header span {
   margin-bottom: 50px;
   color: #F21651;
   font-family: 'Shadows Into Light', cursive;
-
 }
 
 section h1 {
@@ -182,6 +181,15 @@ section .news {
 
 
 @media(max-width:768px) {
+  p {
+    font-size: 12px;
+  }
+
+  #about h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
   header {
     width: 100vw;
     height: 110vh;
@@ -333,7 +341,6 @@ section .news {
 
 }
 
-
 .personal a:hover {
   opacity: 0.85;
   filter: none;
@@ -446,7 +453,7 @@ section .news {
 
   .conB h1 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .conB .eyelipface a {
@@ -484,7 +491,7 @@ section .news {
 
   .conB .eyelipface a .lip {
     left: 45%;
-    top: 42%;
+    top: 122%;
   }
 
   .conB .eyelipface a .face {
