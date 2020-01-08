@@ -24,12 +24,6 @@ html {
 
 header {
   height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  background-image: url(../images/heroimage.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
   position: relative;
 }
 
@@ -186,25 +180,76 @@ section .news {
   filter: contrast(140%) brightness(115%);
 }
 
-.con h1:before {
-  top: 0;
-  left: 0;
-  border-width: 25px 0px 25px 15px;
-  border-color: transparent transparent transparent #b7b7b7;
-  border-style: solid;
-}
 
-.con h1:after {
-  top: 0;
-  right: 0;
-  border-width: 25px 15px 25px 0px;
-  border-color: transparent #b3b3b3 transparent transparent;
-  border-style: solid;
+@media(max-width:768px) {
+  header {
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+  }
+
+  header h1 {
+    right: 10px;
+    bottom: 100px;
+    font-size: 30px;
+  }
+
+  nav .inner {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    width: 100%;
+  }
+
+  li {
+    color: #F2F2F2;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 4px;
+  }
+
+  li:first-child {
+    display: none;
+  }
+
+  ul a {
+    color: #1E1826;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+  }
+
+  .con {
+    height: 35vh;
+    min-height: 50px;
+    margin-bottom: 20px;
+    /*min-width: 900px;*/
+    position: static;
+    background-image: url(../images/about02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: inherit;
+    position: relative;
+  }
+
+  .con .aboutsprout {
+    width: 53%;
+    position: absolute;
+    z-index: 9;
+    top: 30px;
+    left: 10px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+  }
 }
 
 /*conAここから*/
 .conA {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .conA h1 {
@@ -243,6 +288,15 @@ section .news {
   filter: saturate(160%) brightness(110%);
 }
 
+@media(max-width:768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .conA img {
+    height: 120px;
+  }
+}
 
 .personal {
   margin-top: 50px;
@@ -283,6 +337,31 @@ section .news {
 .personal a:hover {
   opacity: 0.85;
   filter: none;
+}
+
+@media(max-width:768px) {
+
+  .personal {
+    height: 35vh;
+    min-height: 200px;
+    background-attachment: inherit;
+    margin-bottom: 40px;
+  }
+
+  .personal h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .personal h2 span {
+    color: #F21651;
+    border-bottom: solid 2px #F21651;
+  }
+
+  .personal a:hover {
+    opacity: 0.85;
+    filter: none;
+  }
 }
 
 /*GALLERY*/
@@ -345,7 +424,6 @@ section .news {
   top: 42%;
 }
 
-
 .conB a {
   text-decoration: none;
   color: #1E1826;
@@ -354,6 +432,65 @@ section .news {
 .conB a:hover {
   opacity: 0.9;
   filter: brightness(120%);
+}
+
+@media(max-width:768px) {
+  .container {
+    justify-content: inherit;
+  }
+
+  .conB {
+    margin-bottom: 40px;
+    height: 50vh;
+  }
+
+  .conB h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  .conB .eyelipface a {
+    /* width: calc(100% / 3); */
+    flex: 1;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  .conB .eyelipface {
+    margin: 0 auto;
+  }
+
+  .conB .eyelipface a img {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .conB .eyelipface a h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3px 10px;
+    position: absolute;
+    z-index: 9;
+  }
+
+  .conB .eyelipface a .eye {
+    position: absolute;
+    left: 45%;
+    top: 200%;
+  }
+
+  .conB .eyelipface a .lip {
+    left: 45%;
+    top: 42%;
+  }
+
+  .conB .eyelipface a .face {
+    left: 42%;
+    top: 300%;
+  }
 }
 
 /*コンタクト*/
@@ -390,6 +527,32 @@ td {
   padding: 1rem;
 }
 
+@media(max-width:768px) {
+  body .conC {
+    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .conC h1 {
+    margin: 0 auto 20px;
+  }
+
+  .conC .inner {
+    flex-direction: column-reverse;
+  }
+
+
+  .conC table {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
 /*ショップここから*/
 .shopimage {
   height: 30vh;
@@ -422,6 +585,18 @@ td {
   color: #F21651;
   text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   text-align: center;
+}
+
+@media(max-width:768px) {
+  .shopimage {
+    margin-top: 40px;
+    min-height: 100px;
+    margin-bottom: 40px;
+  }
+
+  .shopimage h2 {
+    font-size: 30px;
+  }
 }
 
 /*フッターメニュー*/
