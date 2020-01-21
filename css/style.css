@@ -358,6 +358,7 @@ section .news {
   .personal h2 {
     font-size: 30px;
     line-height: 35px;
+    top: 20%;
   }
 
   .personal h2 span {
@@ -565,7 +566,6 @@ td {
   height: 30vh;
   min-height: 400px;
   margin-bottom: 100px;
-  /*min-width: 900px;*/
   background-image: url(../images/shop.jpg);
   background-position: center;
   background-size: cover;
@@ -576,7 +576,7 @@ td {
 
 .shopimage:hover {
   opacity: 0.9;
-  filter: contrast(140%)brightness(105%);
+  filter: contrast(120%)brightness(105%);
   transition: 0.4s ease;
 
 }
